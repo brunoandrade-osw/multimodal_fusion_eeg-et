@@ -1,4 +1,4 @@
-# Análise Unimodal de EEG na Classificação do Transtorno do Espectro do Austimo (TEA)
+# Análise Multimodal de EEG e Eye Tracking na Classificação do Transtorno do Espectro do Austimo (TEA)
 
 Este repositório contém o pipeline computacional e os dados de validação do projeto de mestrado desenvolvido no Instituto Santos Dumont (ISD) pelo Programa de Pós-Graduação em Neuroengenharia (PPgN). 
 
@@ -6,7 +6,7 @@ A pesquisa investiga o processamento socioemocional em crianças com TEA atravé
 
 ### Principais Achados
 A aplicação de algoritmos de Aprendizado de Máquina aos dados de Potência Relativa revelou assinaturas neurobiológicas distintas no processamento da Face Feliz:
-* Desempenho Preditivo: O modelo XGBoost alcançou ~81.0% de acurácia (Validação Leave-One-Out) na classificação entre TEA e Controle.
+* Desempenho Preditivo: O modelo de aprendizado de máquina alcançou ~86.0% de acurácia (Validação 5-Fold) na classificação entre TEA e Controle.
 * Desequilíbrio Excitatório/Inibitório: A extração de características (Feature Importance e SHAP Values) associada aos mapas topográficos (d de Cohen) confirmou uma hipoativação global da banda Alpha (déficit inibitório) e uma hiperativação compensatória da banda Gamma nas regiões temporais e frontais no grupo TEA.
 
 ---
@@ -19,11 +19,17 @@ eeg-asd-classification/
 │   ├── interim/          # Dados intermediários durante o processamento
 │   └── processed/        # Épocas finais prontas para extração
 ├── notebooks/            # Pipeline computacional sequencial
-│   ├── 01_Project_Setup.ipynb
-│   ├── 02_EEG_Preprocessing.ipynb
-│   ├── 03_Feature_Extraction.ipynb
-│   ├── 04_Model_Training.ipynb
-│   └── 05_Plots.ipynb
+│   ├── 01_Structuring_eeg.ipynb
+│   ├── 02_Preprocessing_eeg.ipynb
+│   ├── 03_Features_eeg.ipynb
+│   ├── 04_ML_eeg.ipynb
+│   └── 05_Plots_eeg.ipynb
+│   ├── 06_Structuring_et.ipynb
+│   ├── 07_Preprocessing_et.ipynb
+│   ├── 08_Features_et.ipynb
+│   ├── 09_ML_et.ipynb
+│   └── 10_Plots_et.ipynb
+│   └── 11_Multimodal_fusion.ipynb
 ├── reports/              # Saída automática de gráficos e mapas topográficos
 ├── results/              # Tabelas e métricas brutas exportadas pelo modelo
 ├── Dockerfile            # Receita para construção do contêiner isolado
