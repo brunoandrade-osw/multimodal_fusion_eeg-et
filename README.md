@@ -15,7 +15,9 @@ A aplicação de algoritmos de Aprendizado de Máquina aos dados de Potência Re
 ```text
 eeg-asd-classification/
 ├── .devcontainer/        # Configurações do ambiente de desenvolvimento (VS Code)
-├── data/                 # Armazenamento de dados do EEG
+├── data/                 # Armazenamento de dados
+│   ├── eeg/              # Dados EEG
+│   ├── et/               # Dados Eye Tracking
 │   ├── interim/          # Dados intermediários durante o processamento
 │   └── processed/        # Épocas finais prontas para extração
 ├── notebooks/            # Pipeline computacional sequencial
@@ -23,13 +25,11 @@ eeg-asd-classification/
 │   ├── 02_Preprocessing_eeg.ipynb
 │   ├── 03_Features_eeg.ipynb
 │   ├── 04_ML_eeg.ipynb
-│   └── 05_Plots_eeg.ipynb
-│   ├── 06_Structuring_et.ipynb
-│   ├── 07_Preprocessing_et.ipynb
-│   ├── 08_Features_et.ipynb
-│   ├── 09_ML_et.ipynb
-│   └── 10_Plots_et.ipynb
-│   └── 11_Multimodal_fusion.ipynb
+│   ├── 05_Structuring_et.ipynb
+│   ├── 06_Preprocessing_et.ipynb
+│   ├── 07_Features_et.ipynb
+│   ├── 08_ML_et.ipynb
+│   └── 09_Multimodal_fusion.ipynb
 ├── reports/              # Saída automática de gráficos e mapas topográficos
 ├── results/              # Tabelas e métricas brutas exportadas pelo modelo
 ├── Dockerfile            # Receita para construção do contêiner isolado
