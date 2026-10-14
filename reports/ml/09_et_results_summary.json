@@ -1,0 +1,347 @@
+{
+  "n_subjects": 41,
+  "n_asd": 18,
+  "n_control": 23,
+  "modelo": "Ensemble GB (media de 360 GB; src/ensemble_gb.py) sobre 252 features (emocoes + avancadas, com BCEA)",
+  "validacao": "10-fold estratificado repetido 20x (media +- DP entre repeticoes)",
+  "n_repeticoes": 20,
+  "accuracy_mean": 0.8390243902439026,
+  "accuracy_std": 0.02426153459291901,
+  "accuracy_min": 0.8048780487804879,
+  "accuracy_max": 0.8780487804878049,
+  "balanced_accuracy_mean": 0.8375000000000001,
+  "balanced_accuracy_std": 0.025152519960771627,
+  "sensitivity_mean": 0.825,
+  "sensitivity_std": 0.04515153893818048,
+  "specificity_mean": 0.85,
+  "specificity_std": 0.03300672410940207,
+  "roc_auc_mean": 0.8602657004830917,
+  "roc_auc_std": 0.024423559666339568,
+  "representative_rep": 0,
+  "representative_rep_confusion_matrix": [
+    [
+      19,
+      4
+    ],
+    [
+      3,
+      15
+    ]
+  ],
+  "por_esquema": [
+    {
+      "modelo": "Ensemble GB",
+      "esquema": "10-fold × 20 (principal)",
+      "acc": 0.839,
+      "acc_std": 0.0243,
+      "acc_min": 0.8049,
+      "acc_max": 0.878,
+      "bal_acc": 0.8375,
+      "sens": 0.825,
+      "spec": 0.85,
+      "roc_auc": 0.8603
+    },
+    {
+      "modelo": "GB única",
+      "esquema": "10-fold × 20 (principal)",
+      "acc": 0.8024,
+      "acc_std": 0.0518,
+      "acc_min": 0.7317,
+      "acc_max": 0.9024,
+      "bal_acc": 0.7989,
+      "sens": 0.7694,
+      "spec": 0.8283,
+      "roc_auc": 0.8545
+    },
+    {
+      "modelo": "Ensemble GB",
+      "esquema": "5-fold × 20",
+      "acc": 0.7756,
+      "acc_std": 0.0728,
+      "acc_min": 0.561,
+      "acc_max": 0.878,
+      "bal_acc": 0.7704,
+      "sens": 0.7278,
+      "spec": 0.813,
+      "roc_auc": 0.8209
+    },
+    {
+      "modelo": "GB única",
+      "esquema": "5-fold × 20",
+      "acc": 0.7512,
+      "acc_std": 0.079,
+      "acc_min": 0.5366,
+      "acc_max": 0.878,
+      "bal_acc": 0.7469,
+      "sens": 0.7111,
+      "spec": 0.7826,
+      "roc_auc": 0.7854
+    },
+    {
+      "modelo": "Ensemble GB",
+      "esquema": "LOOCV",
+      "acc": 0.8537,
+      "acc_std": NaN,
+      "acc_min": 0.8537,
+      "acc_max": 0.8537,
+      "bal_acc": 0.8575,
+      "sens": 0.8889,
+      "spec": 0.8261,
+      "roc_auc": 0.8816
+    },
+    {
+      "modelo": "GB única",
+      "esquema": "LOOCV",
+      "acc": 0.8049,
+      "acc_std": NaN,
+      "acc_min": 0.8049,
+      "acc_max": 0.8049,
+      "bal_acc": 0.808,
+      "sens": 0.8333,
+      "spec": 0.7826,
+      "roc_auc": 0.8696
+    }
+  ],
+  "features_ensemble": [
+    "Scan_Duracao_Media_Fix_ms_Delta_NeutroRaiva",
+    "BCEA_Feliz",
+    "GazeX_Std_Neutro",
+    "BCEA_Neutro",
+    "GazeX_Std_Feliz",
+    "BCEA_Raiva",
+    "GazeY_Std_Feliz",
+    "GazeX_Max_Feliz",
+    "GazeX_Max_Neutro",
+    "GazeX_Std_Raiva",
+    "GazeY_Std_Raiva",
+    "Distancia_Total_Delta_FelizRaiva",
+    "Trans_Boca_Olhos_Delta_NeutroRaiva",
+    "Velocidade_Var_Feliz",
+    "Velocidade_Std_Feliz",
+    "Pupila_Mediana_Delta_NeutroRaiva",
+    "GazeX_Media_Neutro",
+    "GazeX_Min_Raiva",
+    "PrimFix_Fora_Perc_Feliz",
+    "Trans_Olhos_Boca_Delta_NeutroRaiva"
+  ],
+  "features_top10": [
+    "Scan_Duracao_Media_Fix_ms_Delta_NeutroRaiva",
+    "BCEA_Feliz",
+    "GazeX_Std_Neutro",
+    "BCEA_Neutro",
+    "GazeX_Std_Feliz",
+    "BCEA_Raiva",
+    "GazeY_Std_Feliz",
+    "GazeX_Max_Feliz",
+    "GazeX_Max_Neutro",
+    "GazeX_Std_Raiva"
+  ],
+  "univariado_top20": [
+    {
+      "feature": "Scan_Duracao_Media_Fix_ms_Delta_NeutroRaiva",
+      "frac_membros": 1.0,
+      "importancia": 0.2746,
+      "F": 13.9351,
+      "d": -1.1555,
+      "p_MW": 0.0044
+    },
+    {
+      "feature": "BCEA_Feliz",
+      "frac_membros": 1.0,
+      "importancia": 0.248,
+      "F": 12.4557,
+      "d": 0.9051,
+      "p_MW": 0.0005
+    },
+    {
+      "feature": "GazeX_Std_Neutro",
+      "frac_membros": 1.0,
+      "importancia": 0.2128,
+      "F": 11.8147,
+      "d": 0.9083,
+      "p_MW": 0.0007
+    },
+    {
+      "feature": "BCEA_Neutro",
+      "frac_membros": 1.0,
+      "importancia": 0.0138,
+      "F": 11.0297,
+      "d": 0.884,
+      "p_MW": 0.004
+    },
+    {
+      "feature": "GazeX_Std_Feliz",
+      "frac_membros": 1.0,
+      "importancia": 0.0459,
+      "F": 9.3188,
+      "d": 0.8744,
+      "p_MW": 0.0044
+    },
+    {
+      "feature": "BCEA_Raiva",
+      "frac_membros": 0.8,
+      "importancia": 0.0145,
+      "F": 8.9824,
+      "d": 0.792,
+      "p_MW": 0.0104
+    },
+    {
+      "feature": "GazeY_Std_Feliz",
+      "frac_membros": 0.8,
+      "importancia": 0.0061,
+      "F": 8.7694,
+      "d": 0.9293,
+      "p_MW": 0.0077
+    },
+    {
+      "feature": "GazeX_Max_Feliz",
+      "frac_membros": 0.8,
+      "importancia": 0.0314,
+      "F": 8.3775,
+      "d": 0.8918,
+      "p_MW": 0.0089
+    },
+    {
+      "feature": "GazeX_Max_Neutro",
+      "frac_membros": 0.6,
+      "importancia": 0.0087,
+      "F": 7.9305,
+      "d": 0.8691,
+      "p_MW": 0.013
+    },
+    {
+      "feature": "GazeX_Std_Raiva",
+      "frac_membros": 0.6,
+      "importancia": 0.0019,
+      "F": 7.7139,
+      "d": 0.8015,
+      "p_MW": 0.014
+    },
+    {
+      "feature": "GazeY_Std_Raiva",
+      "frac_membros": 0.4,
+      "importancia": 0.0016,
+      "F": 7.3448,
+      "d": 0.9184,
+      "p_MW": 0.0104
+    },
+    {
+      "feature": "Distancia_Total_Delta_FelizRaiva",
+      "frac_membros": 0.4,
+      "importancia": 0.0747,
+      "F": 7.0994,
+      "d": 0.8188,
+      "p_MW": 0.0031
+    },
+    {
+      "feature": "Trans_Boca_Olhos_Delta_NeutroRaiva",
+      "frac_membros": 0.4,
+      "importancia": 0.0535,
+      "F": 6.4808,
+      "d": -0.8069,
+      "p_MW": 0.0187
+    },
+    {
+      "feature": "Velocidade_Var_Feliz",
+      "frac_membros": 0.4,
+      "importancia": 0.0022,
+      "F": 6.3294,
+      "d": 0.7611,
+      "p_MW": 0.0302
+    },
+    {
+      "feature": "Velocidade_Std_Feliz",
+      "frac_membros": 0.4,
+      "importancia": 0.0011,
+      "F": 6.3293,
+      "d": 0.7847,
+      "p_MW": 0.0302
+    },
+    {
+      "feature": "Pupila_Mediana_Delta_NeutroRaiva",
+      "frac_membros": 0.2,
+      "importancia": 0.0014,
+      "F": 6.037,
+      "d": 0.7586,
+      "p_MW": 0.0151
+    },
+    {
+      "feature": "GazeX_Media_Neutro",
+      "frac_membros": 0.2,
+      "importancia": 0.001,
+      "F": 5.7186,
+      "d": 0.7725,
+      "p_MW": 0.0806
+    },
+    {
+      "feature": "GazeX_Min_Raiva",
+      "frac_membros": 0.2,
+      "importancia": 0.0016,
+      "F": 5.5582,
+      "d": -0.4203,
+      "p_MW": 0.0761
+    },
+    {
+      "feature": "PrimFix_Fora_Perc_Feliz",
+      "frac_membros": 0.2,
+      "importancia": 0.0001,
+      "F": 5.552,
+      "d": 0.6596,
+      "p_MW": 0.026
+    },
+    {
+      "feature": "Trans_Olhos_Boca_Delta_NeutroRaiva",
+      "frac_membros": 0.2,
+      "importancia": 0.0054,
+      "F": 5.4011,
+      "d": -0.7298,
+      "p_MW": 0.0356
+    }
+  ],
+  "shap_top10": [
+    "BCEA_Feliz",
+    "Scan_Duracao_Media_Fix_ms_Delta_NeutroRaiva",
+    "GazeX_Std_Neutro",
+    "Distancia_Total_Delta_FelizRaiva",
+    "Trans_Boca_Olhos_Delta_NeutroRaiva",
+    "BCEA_Neutro",
+    "GazeX_Max_Feliz",
+    "GazeX_Std_Feliz",
+    "GazeY_Std_Raiva",
+    "GazeX_Max_Neutro"
+  ],
+  "sensibilidade_rastreio": {
+    "auc_taxa_rastreio_sozinha": 0.8236714975845411,
+    "retirados": [
+      "T12 CONTROLE",
+      "T17 TEA LEVE",
+      "T21 TEA MODERADO",
+      "T 24 TEA LEVE",
+      "T28 TEA GRAVE"
+    ],
+    "n": 36,
+    "n_asd": 14,
+    "accuracy": {
+      "mean": 0.6416666666666668,
+      "std": 0.051693227153982564
+    },
+    "balanced_accuracy": {
+      "mean": 0.6081168831168832,
+      "std": 0.05296446687712323
+    },
+    "sensitivity": {
+      "mean": 0.45714285714285713,
+      "std": 0.09940748199120847
+    },
+    "specificity": {
+      "mean": 0.759090909090909,
+      "std": 0.07955399817412917
+    },
+    "roc_auc": {
+      "mean": 0.6581168831168831,
+      "std": 0.0450634970745299
+    }
+  },
+  "resubstitution_accuracy_final_refit": 1.0,
+  "nota": "O numero depende do esquema de validacao (ver por_esquema): LOOCV e o extremo otimista, 5-fold o pessimista. resubstitution_accuracy_final_refit e apenas sanity check."
+}
