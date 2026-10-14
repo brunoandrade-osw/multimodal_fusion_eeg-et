@@ -307,8 +307,15 @@
       400
     ]
   },
-  "cv10_repetido_accuracy": 0.8390243902439026,
-  "cv10_repetido_accuracy_std": 0.02426153459291901,
-  "cv10_repetido_balanced_acc": 0.8375000000000001,
-  "n_repeticoes": 20
+  "validacao": "10-fold estratificado repetido 20x",
+  "accuracy_mean": 0.8390243902439026,
+  "accuracy_std": 0.02426153459291901,
+  "balanced_accuracy_mean": 0.8375000000000001,
+  "balanced_accuracy_std": 0.025152519960771627,
+  "sensitivity_mean": 0.825,
+  "sensitivity_std": 0.04515153893818048,
+  "specificity_mean": 0.85,
+  "specificity_std": 0.03300672410940207,
+  "roc_auc_mean": 0.8602657004830917,
+  "roc_auc_std": 0.024423559666339568
 }
