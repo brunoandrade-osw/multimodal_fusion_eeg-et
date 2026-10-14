@@ -308,14 +308,14 @@
     ]
   },
   "validacao": "10-fold estratificado repetido 20x",
-  "accuracy_mean": 0.8390243902439026,
-  "accuracy_std": 0.02426153459291901,
-  "balanced_accuracy_mean": 0.8375000000000001,
-  "balanced_accuracy_std": 0.025152519960771627,
-  "sensitivity_mean": 0.825,
-  "sensitivity_std": 0.04515153893818048,
+  "accuracy_mean": 0.8402439024390246,
+  "accuracy_std": 0.023036908326544692,
+  "balanced_accuracy_mean": 0.8388888888888891,
+  "balanced_accuracy_std": 0.023816603049719345,
+  "sensitivity_mean": 0.8277777777777778,
+  "sensitivity_std": 0.04378160698068956,
   "specificity_mean": 0.85,
   "specificity_std": 0.03300672410940207,
-  "roc_auc_mean": 0.8602657004830917,
-  "roc_auc_std": 0.024423559666339568
+  "roc_auc_mean": 0.8614734299516907,
+  "roc_auc_std": 0.02567398971691091
 }
